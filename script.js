@@ -1,6 +1,10 @@
 window.onload = function () {
-  alert("Welcome to Lochquarry Outdoor Centre!");
+  // Only show pop-up on the homepage (index.html)
+  if (window.location.pathname.endsWith("index.html") || window.location.pathname.endsWith("/")) {
+    alert("Welcome to Lochquarry Outdoor Centre!");
+  }
 };
+
 const images = document.querySelectorAll("img");
 
 images.forEach(img => {
